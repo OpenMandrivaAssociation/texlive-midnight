@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/midnight
+# catalog-date 2008-11-09 11:56:27 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-midnight
 Version:	20081109
 Release:	1
@@ -55,6 +61,7 @@ border: borders around boxes.
 %doc %{_texmfdistdir}/doc/generic/midnight/midnight.pdf
 %doc %{_texmfdistdir}/doc/generic/midnight/quire.doc
 %doc %{_texmfdistdir}/doc/generic/midnight/styledef.doc
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ border: borders around boxes.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
