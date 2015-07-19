@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-midnight
 Version:	20081109
-Release:	9
+Release:	10
 Summary:	A set of useful macro tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/midnight
