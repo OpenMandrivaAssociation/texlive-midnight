@@ -1,6 +1,6 @@
 Name:		texlive-midnight
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	A set of useful macro tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/midnight
