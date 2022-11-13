@@ -1,12 +1,12 @@
 Name:		texlive-midnight
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	A set of useful macro tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/midnight
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +21,12 @@ letters; - styledef: selectively input part of a file; and -
 border: borders around boxes.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -35,7 +35,7 @@ border: borders around boxes.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
