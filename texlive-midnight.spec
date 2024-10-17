@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A set of useful macro tools
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/midnight
+URL:		https://www.ctan.org/tex-archive/macros/generic/midnight
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/midnight.doc.r%{version}.tar.xz
